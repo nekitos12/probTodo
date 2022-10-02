@@ -29,7 +29,7 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": ["npm run lint:write", "git add"]
+    "*.(js|jsx)": ["npm run lint:fix", "git add"]
   },
   "eslintConfig": {
     "extends": [
