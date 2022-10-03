@@ -115,7 +115,7 @@ export default class TodoApp extends Component {
       label,
       done: false,
       editing: false,
-      id: this.maId++,
+      id: this.maxId++,
       realBornTime: Date.now(),
     }
   }
@@ -149,7 +149,6 @@ export default class TodoApp extends Component {
     )
   }
 }
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
