@@ -116,7 +116,7 @@ export default class TodoApp extends Component {
       done: false,
       editing: false,
       id: this.maxId++,
-      realBornTime: Date.now(),
+      realBornTme: Date.now(),
     }
   }
 
