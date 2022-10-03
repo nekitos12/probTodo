@@ -87,8 +87,9 @@ export default class TodoApp extends Component {
   changeTaskDescr = (newLabel, id) => {
     this.setState(({ todoData }) => {
       const newTodos = JSON.parse(JSON.stringify(todoData))
+      const newTodos2 = JSON.parse(JSON.stringify(newTodos))
       return {
-        todoData: newTodos.map((todo) => (todo.id === id ? { ...todo, label: newLabel } : { ...todo })),
+        todoData: newTodos2.map((todo) => (todo.id === id ? { ...todo, label: newLabel } : { ...todo })),
       }
     })
   }
